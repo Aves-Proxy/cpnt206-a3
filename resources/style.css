@@ -1,0 +1,104 @@
+/* body layout and default styling */
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Quattrocento', serif;
+  color: RGB(38, 25, 17);
+  background-color: RGB(249, 246, 239);
+}
+
+/* flexbox, vertical positioning, and center alignment everywhere */
+body, header, main, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* limits content width */
+.contain {
+  max-width: 40rem;
+}
+
+/* colored header and footer wrapper that stretches across page */
+div {
+  background-color: RGB(102, 74, 50);
+  width: 100vw;
+}
+
+/* margin for content that doesn't create white bar on the edges */
+header, main, footer {
+  margin: 0.5rem;
+}
+
+/* site title positioning and styling */
+span {
+  align-self: flex-start;
+  padding: 0px 5px;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  background-color: RGB(249, 246, 239);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  border-style:solid;
+}
+
+/* nav list layout, wrap for small screens, remove list styling */
+ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px;
+  list-style: none;
+}
+
+/* nav link styling */
+ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: RGB(38, 25, 17);
+  background-color: RGB(191, 175, 160);
+}
+
+/* nav link styling on hover to indicate clickability */
+ul a:hover {
+  color: RGB(38, 25, 17);
+  background-color: RGB(249, 246, 239);
+}
+
+/* nav list styling */
+li {
+  min-width: 6rem;
+  padding: 0.5rem;
+  border-style: solid;
+}
+
+/* stretches main content vertically to fit page */
+main {
+  flex: auto;
+}
+
+/* heading styling */
+h1 {
+  font-size: 72px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* link color */
+a {
+  color: RGB(102, 74, 50);
+}
+
+/* link color on hover to indicate clickability */
+a:hover {
+  color: RGB(191, 175, 160);
+}
+
+/* footer styling */
+footer {
+  padding-top: 0.5rem;
+  font-size: 12px;
+  color: RGB(249, 246, 239);
+  background-color: RGB(102, 74, 50);
+}
